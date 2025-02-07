@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#beforeHeader{
+background-color: black;
+border: solid black 10px;
+width: 100%;
+height: 200px;
+
+}
+
+header{
+    background-color: yellow;
+    border: solid black 10px;
+    width: 100%;
+    height: 400px;
+}
+
+main{
+    background-color: white;
+    border: solid black 10px;
+    width: 100%;
+    height: 3000px;
+}
+
+#aftermain{
+    background-color: black;
+    border: solid black 10px;
+    width: 100%;
+    height: 200px;
+}
+
+#commentsandtracks{
+    background-color: yellow;
+    border: solid black 10px;
+    width: 100%;
+    height: 1000px;
+}
+
+#aftercandt{
+    background-color: black;
+    border: solid black 10px;
+    width: 100%;
+    height: 200px;
+}
+
+#comentsandadd{
+    background-color: white;
+    border: solid black 10px;
+    width: 100%;
+    height: 1000px;
+}
+
+footer{
+    background-color: black;
+    border: solid black 10px;
+    width: 100%;
+    height: 500px;
+}
+
+
+/*Like we did in css. we've got a flex box for the container and other for the inner parts, we are going to do the same here to do 2 flexbox each one for each column. cause here we have 2 columns one for imag description and other for add search bar etc..*/
+
+/* so now it's gonna be header's columns*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#headerLeft{
+width: 60%;
+height: 390px;
+background-color: yellow;
+
+}
+
+#headerright{
+width: 40%;
+height: 390px;
+background-color:yellow;
+
+}
+
+/* Right divs set. just to know when its one close to another like this the  flex-direction: must be column and the justify-content:  must be  start. */
+
+/* now it's time to set the itens in both of them. */
+
+/* let's start with the left one */
