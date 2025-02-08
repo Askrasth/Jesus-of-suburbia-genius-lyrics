@@ -97,3 +97,122 @@ background-color:yellow;
 /* now it's time to set the itens in both of them. */
 
 /* let's start with the left one */
+
+
+/* this is the menu part the side by side one */
+
+/* to put the img and title below the nav menu i set justify-content this tome in row and not in column*/
+
+/* i set 2 divs and divided headerledft in 2 parts one for nav and the other for info like img, text title description etc..*/
+
+#headerLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+/* in the headerleft i left flex wrap cause i want one the menu to be above the photo and in the headerinfo i took it off cause i wanted both img and text being sde by side*/
+
+/*So use wrap when you want things under the other and don't when you don't wanna it*/
+
+/* use more than one div of flexbox one for wrap and other for not using wrap then you will master how to put thing one over another */
+
+#headerInfo{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: yellow;
+}
+
+#heasertitle{
+text-align: start;
+margin-left: 15px;
+}
+
+#headerdescription{
+text-align: start;
+margin-left: 15px;
+}
+/* so here we have. the left is the "body" to  flex all inside it and the nav is the "body" to  flex all inside it. So inside the nav we have the logo and the menu.*/
+
+nav{
+display: flex;
+justify-content: space-between;
+padding: 1px;
+
+}
+
+#logonav a{
+    color: black;
+    text-decoration: none;
+    box-shadow: 0px 3px 10px;
+    font-weight: 600;
+}
+
+#logo-link a{
+    color: black;
+    text-decoration: none;
+    box-shadow: 0px 3px 10px;
+
+}
+
+#nav-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+}
+
+.nav-item{
+    margin: 0px 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font: size 1.15rem;
+    color: black;
+    font-weight: 400;
+}
+
+
+
+/* for the right side*/
+
+/* to keep them in the same line i will use one div for signup and search bar like i did in the header's left part and other for the adds and other parts. */
+
+
+#rightnavpart{
+        
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: yellow;
+    column-gap: 20px;
+    
+}
+
+#signupbottom{
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#sign-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    /*font-size: 1.1rem;*/
+}
+
+/* i can't take off the little ball from sign up so i will set an id to the li and take from it's id. And it worked */
+
+
+#signupli {
+    list-style-type: none; 
+}
+
+#searchbar{
+    margin-top: 18px;
+}
